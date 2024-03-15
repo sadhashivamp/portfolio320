@@ -8,6 +8,18 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active')
 }
 
+// Close menu when clicking on a navigation link
+let navLinks1 = document.querySelectorAll(".navbar a");
+
+navLinks1.forEach(link => {
+    link.addEventListener("click", () => {
+        if (navbar.classList.contains("active")) {
+            menuIcon.classList.remove("fa-xmark");
+            navbar.classList.remove("active");
+        }
+    });
+});
+
 // scroll section active link
 
 let sections = document.querySelectorAll('section');

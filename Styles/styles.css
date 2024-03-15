@@ -39,7 +39,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 9%; 
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -59,10 +59,14 @@ section {
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 700;
+    padding: .8rem;
+    border: 1px solid #77b7e8;
+    background: #112230;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover {
     color: var(--text-color);
 }
 
@@ -167,6 +171,8 @@ span {
     align-items: center;
     gap: 10rem;
     background: var(--snd-bg-color);
+    padding-bottom: 7rem
+
 }
 
 .about-img img {
@@ -411,7 +417,11 @@ span {
     }
 
     .services {
-        padding: 7rem
+        padding-bottom: 7rem;
+    }
+
+    .home {
+        padding-bottom: 7rem
     }
 
     .portfolio {
@@ -524,6 +534,19 @@ span {
     }
 
     .contact form .input-box input {
+        width: 100%;
+    }
+
+    .footer-text {
+        font-size: 1.4rem;
+    }
+
+    .footer-iconTop a i {
+        font-size: 1.4rem;
+        color: var(--snd-bg-color);
+    }
+
+    .services-container {
         width: 100%;
     }
 }
